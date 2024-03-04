@@ -5,6 +5,9 @@ services:
     container_name: gitlab
     restart: always
     hostname: 'localhost'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://192.168.0.225'
     ports:
       - '80:80'
       - '443:443'
