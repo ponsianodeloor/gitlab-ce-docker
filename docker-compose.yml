@@ -4,7 +4,7 @@ services:
     image: gitlab/gitlab-ce:16.7.6-ce.0
     container_name: gitlab
     restart: always
-    hostname: 'localhost'
+    hostname: '192.168.0.225'
     ports:
       - '80:80'
       - '443:443'
